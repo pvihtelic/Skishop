@@ -4,4 +4,6 @@ Skishop::Application.routes.draw do
  
   get "/skis/new", :controller => "Skis", :action => "new", :as => "new_ski"
   get "/skis/:id", :controller => "Skis", :action => "show", :as => "ski"
+
+  delete "/skis/:id", :controller => "Skis", :action => "destroy" 
 end

@@ -14,12 +14,17 @@ class SkisController < ApplicationController
 		p.price = params[:price]
 		p.link = params[:link]
 		p.save
-		redirect_to "/skis"
+		redirect_to skis_url
 	end
 
 	def show
 		@ski = Skis.find_by_id(params["id"])
 	end
 
+	def destroy
+		p = Skis.find_by_id(params["id"])
+		p.destroy
+		redirect_to skis_url
+	end
 
 end
