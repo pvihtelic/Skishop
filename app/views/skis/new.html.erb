@@ -1,0 +1,16 @@
+<%= form_tag skis_url do %>
+	<%= label_tag "image url", "URL for Ski Image:" %>
+	<%= text_field_tag :url %>
+
+	<%= label_tag :title, "Title:" %>
+	<%= text_field_tag :title %>
+
+	<%= label_tag :price, "Price:" %>
+	<%= text_field_tag :price %>
+
+	<%= label_tag :link, "Link to Skis:" %>
+	<%= text_field_tag :link %>
+
+	<%= submit_tag "Add Skis" %>
+	<%= link_to "Go to Index", skis_url %>
+<% end %>
