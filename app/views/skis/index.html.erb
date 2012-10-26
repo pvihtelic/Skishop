@@ -6,14 +6,13 @@
 	</li>
 </ul>
 
-<ul>
+<ul class="products">
 <% @skis.each do |ski| %>
-	<li>
-		<%= link_to image_tag(ski.url, :width => 300), ski_url(ski.id) %>
+		<li class="product-item">
+		<%= link_to image_tag(ski.url, :class => "image"), ski_url(ski.id) %>
+		<br />
 		<%= link_to "Delete", ski_url(ski.id), :method => 'delete' %>
 		<%= link_to "Edit", edit_ski_url(ski.id) %>
-	</li>
+		</li>
 <% end %>
 </ul>
-
-
