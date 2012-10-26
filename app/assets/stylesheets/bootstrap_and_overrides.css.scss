@@ -1,0 +1,38 @@
+@import "bootstrap";
+body { padding-top: 60px; }
+@import "bootstrap-responsive";
+body { 
+    background: url('http://2.bp.blogspot.com/-EDfdjZo0u4Y/TcORY9Tu7AI/AAAAAAAAAI4/3YNhOuStJXo/s1600/Wallpapers-Wallpapers-nature-wallpaper-snow-wallpaper-10.jpg'); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+    background-position: 0px;
+    background-repeat: repeat; 
+	}
+.brand { 
+	text-indent: -999px;
+	width: 100px;
+	height: 26px;
+	padding: 0;
+	margin: 5px 0 0 0;
+	background: url('http://i.imgur.com/EhZdQ.png')
+	no-repeat center center;
+	}
+.navbar-inner {
+  background-color: #DDD;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+	}
+.btn-primary {
+	background-color: #FF6600 !important;
+	background-repeat: repeat-x;
+	background-image: -webkit-linear-gradient(top, #FF8000, #FF6600);
+	border-color: #FF5900;
+	color: white !important;
+	margin-top: -50px
+	}
+.btn-primary:hover {
+	background-color: #FF5900
+	}
