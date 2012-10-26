@@ -10,15 +10,10 @@ body {
     background-position: 0px;
     background-repeat: repeat; 
 	}
-.brand { 
-	text-indent: -999px;
-	width: 100px;
-	height: 26px;
-	padding: 0;
-	margin: 5px 0 0 0;
-	background: url('http://i.imgur.com/EhZdQ.png')
-	no-repeat center center;
-	}
+.brand {
+  background: url(http://i.imgur.com/EhZdQ.png) no-repeat left center;
+  height: 30px;
+}
 .navbar-inner {
   background-color: #DDD;
   background-image: none;
