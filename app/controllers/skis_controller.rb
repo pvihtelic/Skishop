@@ -10,6 +10,7 @@ class SkisController < ApplicationController
 		@ski.title = params[:ski][:title]
 		@ski.price = params[:ski][:price]
 		@ski.link = params[:ski][:link]
+		@ski.skitype = params[:ski][:skitype]
 		
 		if @ski.save
 			redirect_to skis_url
@@ -43,6 +44,7 @@ class SkisController < ApplicationController
 		@ski.title = params[:ski][:title]
 		@ski.price = params[:ski][:price]
 		@ski.link = params[:ski][:link]
+		@ski.link = params[:ski][:skitype]
 		if @ski.save
 			redirect_to ski_url(@ski.id)
 		else
