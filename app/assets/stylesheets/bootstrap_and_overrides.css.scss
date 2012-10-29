@@ -11,7 +11,7 @@ body {
     background-repeat: repeat; 
 	}
 .brand {
-  background: url(http://i.imgur.com/EhZdQ.png) no-repeat left center;
+  background: url('http://i.imgur.com/EhZdQ.png') no-repeat left center;
   height: 30px;
 }
 .navbar .brand{
@@ -42,10 +42,16 @@ body {
    width: 300px;
    padding: 10px;
 }
+.product-details {
+	list-style-type: circle;
+}
 .image {
 	width: 300px;
 	text-align: center;
 	height: 300px;
 	overflow: hidden;
 	border: 2px solid #CCC;
+}
+.product-title {
+	font-weight: bold;
 }
