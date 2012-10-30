@@ -1,12 +1,10 @@
 <h2><%= @ski.title %></h2>
 <h3><%= @ski.price %></h3>
-<p><%= link_to "Buy Now", @ski.link %></p>
-<p><%= link_to "Back to Index", skis_url %></p>
-<p><%= link_to "Delete", ski_url(@ski.id), :method => 'delete' %> </p>
-<p><%= link_to "Edit", edit_ski_url(@ski.id) %> </p>
 
-<%= image_tag(@ski.url, :width=>500) %>
+<body>
+<%= image_tag(@ski.url, :class=>"show-ski") %>
 
+<div class="show-right">
 <table class="table table-hover">
 	<thead>
 		<tr>
@@ -37,3 +35,14 @@
   		</tr>
   	</tbody>
 </table>
+
+<p class="show-description">Description goes here...</p>
+
+</div>
+
+</body>
+
+<div class="edit-delete">
+<p><%= link_to "Delete", ski_url(@ski.id), :method => 'delete' %> </p>
+<p><%= link_to "Edit", edit_ski_url(@ski.id) %> </p>
+</div>
