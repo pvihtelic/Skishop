@@ -1,18 +1,12 @@
-<h1>Ski Shop Test App</h1>
-
-<ul>
-	<li>
-		<%= link_to "Add Skis", new_ski_url %>
-	</li>
-</ul>
+<h2>Ski Shop Test App</h2>
 
 <ul class="products">
 <% @skis.each do |ski| %>
 		<li class="product-item">
 		<%= link_to image_tag(ski.url, :class => "image"), ski_url(ski.id) %>
 		<br />
-		<ul class="products">
-		<li class="product-item">
+		<ul class="product-details">
+		<li class="product-details">
 			<span class="product-title">
 			<%= ski.title %> </br>
 			</span>

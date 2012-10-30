@@ -5,4 +5,35 @@
 <p><%= link_to "Delete", ski_url(@ski.id), :method => 'delete' %> </p>
 <p><%= link_to "Edit", edit_ski_url(@ski.id) %> </p>
 
-<img src="<%= @ski.url %>" width="600">
+<%= image_tag(@ski.url, :width=>500) %>
+
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th>Available At</th>
+			<th>Sizes</th>
+			<th>Details</th>
+			<th>Total Price</th>
+		</tr>
+  	</thead>
+  	<tbody>
+  		<tr>
+  			<td>evo.com</td>
+  			<td>177, 186 cm</td>
+  			<td>Free shipping</td>
+  			<td>$678</td>
+  		</tr>
+  		<tr>
+  			<td>backcountry.com</td>
+  			<td>167, 177 cm</td>
+  			<td>Free shipping</td>
+  			<td>$648</td>
+  		</tr>
+  		<tr>
+  			<td>skis.com</td>
+  			<td>167 cm</td>
+  			<td>Free shipping</td>
+  			<td>$699</td>
+  		</tr>
+  	</tbody>
+</table>
