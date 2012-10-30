@@ -73,14 +73,19 @@ a.menu:after, .dropdown-toggle:after {
 .table-hover {
 	float: right;
 	width: 650px;
-	padding: 20px;
+	padding-right: 20px;
 }
 .show-description {
 	float: left;
 	padding-left: 27px;
+	width: 640px;
 }
 .edit-delete {
 	position: absolute;
 	top: 775px;
 	left: 100px;
+}
+.pull-right {
+	padding-top: 6px;
+	padding-right: 125px;
 }

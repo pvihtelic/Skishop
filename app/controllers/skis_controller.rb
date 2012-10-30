@@ -11,7 +11,14 @@ class SkisController < ApplicationController
 		@ski.price = params[:ski][:price]
 		@ski.link = params[:ski][:link]
 		@ski.skitype = params[:ski][:skitype]
-		
+		@ski.brand = params[:ski][:brand]
+		@ski.name = params[:ski][:name]
+		@ski.gender = params[:ski][:gender]
+		@ski.description = params[:ski][:description]
+		@ski.stores = params[:ski][:stores]
+		@ski.size = params[:ski][:size]
+		@ski.details = params[:ski][:details]
+		@ski.reviews = params[:ski][:reviews]
 		if @ski.save
 			redirect_to skis_url
 		else
@@ -44,7 +51,15 @@ class SkisController < ApplicationController
 		@ski.title = params[:ski][:title]
 		@ski.price = params[:ski][:price]
 		@ski.link = params[:ski][:link]
-		@ski.link = params[:ski][:skitype]
+		@ski.skitype = params[:ski][:skitype]
+		@ski.brand = params[:ski][:brand]
+		@ski.name = params[:ski][:name]
+		@ski.gender = params[:ski][:gender]
+		@ski.description = params[:ski][:description]
+		@ski.stores = params[:ski][:stores]
+		@ski.size = params[:ski][:size]
+		@ski.details = params[:ski][:details]
+		@ski.reviews = params[:ski][:reviews]
 		if @ski.save
 			redirect_to ski_url(@ski.id)
 		else

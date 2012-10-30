@@ -1,10 +1,10 @@
 <h2><%= @ski.title %></h2>
-<h3><%= @ski.price %></h3>
 
 <body>
 <%= image_tag(@ski.url, :class=>"show-ski") %>
 
 <div class="show-right">
+<h4 class="show-description">Seller Comparison</h4>
 <table class="table table-hover">
 	<thead>
 		<tr>
@@ -15,28 +15,34 @@
 		</tr>
   	</thead>
   	<tbody>
-  		<tr>
-  			<td>evo.com</td>
-  			<td>177, 186 cm</td>
-  			<td>Free shipping</td>
-  			<td>$678</td>
+      <tr>
+  			<td><%= link_to @ski.stores, @ski.link %></td>
+  			<td><%= @ski.size %></td>
+  			<td><%= @ski.details %> </td>
+  			<td><%= @ski.price %> </td>
   		</tr>
   		<tr>
   			<td>backcountry.com</td>
   			<td>167, 177 cm</td>
   			<td>Free shipping</td>
-  			<td>$648</td>
+  			<td>$648.99</td>
   		</tr>
   		<tr>
   			<td>skis.com</td>
   			<td>167 cm</td>
   			<td>Free shipping</td>
-  			<td>$699</td>
+  			<td>$699.95</td>
   		</tr>
   	</tbody>
 </table>
 
-<p class="show-description">Description goes here...</p>
+<h4 class="show-description">Description</h4>
+<p class="show-description"><%= @ski.description %></p>
+
+</br>
+
+<h4 class="show-description">Aggregated Reviews</h4>
+<p class="show-description"><%= @ski.reviews %></p>
 
 </div>
 
